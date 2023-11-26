@@ -13,10 +13,16 @@ This plugin modifies the behavior of mouse scrolling in Vim. When installed and 
 
 ## INSTALLATION
 
-To install `scrollUptoLastLine.vim`, use your preferred Vim plugin manager. For example, with `Vundle`, you can add the following line to your `.vimrc`:
+To install `scrollUptoLastLine.vim`, use your preferred Vim plugin manager.
 
+- plug.vim
 ```vim
-Plugin 'gw31415/scrollUptoLastLine.vim'
+Plug 'gw31415/scrollUptoLastLine.vim'
+```
+
+- dein.vim
+```vim
+call dein#add('gw31415/scrollUptoLastLine.vim')
 ```
 
 ## USAGE
@@ -29,9 +35,9 @@ let g:scroll_upto_lastline_padding = 3
 
 ## Q/A
 
-### Issue: Strange Behavior When Shift-Scrolling
+### Issue: Strange Behavior When Push <SHIFT> After Scrolling
 
-**Q**: When I hold Shift and scroll, the behavior seems erratic. What's happening?
+**Q**: When I hold Shift after scroll, the behavior seems erratic. What's happening?
 
 **A**: This issue is likely due to `<S-MouseUp>` being unintentionally active. To resolve this, remap `<S-MouseUp>` to `<Nop>` (No operation). You can do this by adding the following line to your `.vimrc`:
 
