@@ -4,7 +4,7 @@ fu! s:up() abort
   if step <= 0
     retu ''
   el
-    retu $"\<cmd>exe \"norm! {step}\\<c-e>\"\<cr>"
+    retu "\<cmd>exe \"norm! " . step . "\\<c-e>\"\<cr>"
   endi
 endfu
 nor <expr><silent><MouseUp> <SID>up()
