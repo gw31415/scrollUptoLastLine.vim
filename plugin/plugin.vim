@@ -1,4 +1,4 @@
-le g:scroll_upto_lastline_padding = &so
+se g:scroll_upto_lastline_padding = &so
 fu! s:up() abort
   if line('w0') + winheight(0) > line('$') + g:scroll_upto_lastline_padding
     retu ''
