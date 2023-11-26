@@ -1,6 +1,8 @@
 # scrollUptoLastLine.vim
 A Vim plugin to stop mouse scrolling at the last line, similar to setting `scrollBeyondLastLine` to `false` in VSCode.
 
+![output](https://github.com/gw31415/scrollUptoLastLine.vim/assets/24710985/5522ead9-9bbb-4542-b206-ad8806af562f)
+
 ## DESCRIPTION
 
 This plugin modifies the behavior of mouse scrolling in Vim. When installed and enabled, it prevents the mouse from scrolling beyond the last line of the document.
